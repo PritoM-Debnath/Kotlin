@@ -7,12 +7,12 @@ fun main() {
 
     var firstName = "pritom"
     val lastName = "debnath"
-    println("My name is "+firstName+" " +lastName)
+    println("My name is $firstName $lastName")
 
     firstName="pratik"
     //lastName = "Pandit"
     // As lastName is declared val it can not be modified, you can try to uncomment line 12 and check it
-    println("My name is "+firstName+ " " +lastName)
+    println("My name is $firstName $lastName")
 
     /*The general rule for Kotlin variables are:
 
@@ -29,7 +29,7 @@ fun main() {
 
     var age: Int
     age = 23
-    println("My age is "+ age)
+    println("My age is $age")
 
     /*Data types are divided into different groups:
     -Numbers
@@ -48,10 +48,35 @@ fun main() {
      */
     
     val intNum: Int = 100000
-    println(intNum)
+    println("Integer number $intNum")
 
     val longNum: Long = 15000000000L
-    println(longNum)
+    println("Long number "+longNum)
+
+    /*
+    Use Float or Double?
+    The precision of a floating point value indicates how many digits the value can have after the decimal point.
+    The precision of Float is only six or seven decimal digits, while Double variables have a precision of about 15 digits.
+    Therefore, it is safer to use Double for most calculations.
+
+    Also note that you should end the value of a Float type with an "F".
+
+     */
+
+    var floatNum : Float = 3.5F
+    println("Float Number :$floatNum")
+    //A floating point number can also be a scientific number with an "e" or "E" to indicate the power of 10:
+    var sciNum = 3.5E3F
+    println("Scientific Float Number :$sciNum")
+
+    //Boolean
+    var isThisTrue = true
+    println("Is this true :$isThisTrue")
+
+    //Char
+    val myGrade: Char = 'B'
+    println("My grade is :$myGrade")
+
 
 
 }
