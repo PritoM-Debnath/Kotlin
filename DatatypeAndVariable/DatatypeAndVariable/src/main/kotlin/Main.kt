@@ -53,6 +53,8 @@ fun main() {
     val longNum: Long = 15000000000L
     println("Long number "+longNum)
 
+    println("Result ${intNum + longNum}")
+
     /*
     Use Float or Double?
     The precision of a floating point value indicates how many digits the value can have after the decimal point.
