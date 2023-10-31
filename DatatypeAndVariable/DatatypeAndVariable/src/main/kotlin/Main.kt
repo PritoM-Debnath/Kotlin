@@ -46,7 +46,7 @@ fun main() {
     -Floating point types represent numbers with a fractional part, containing one or more decimals.
     There are two types: Float and Double.
      */
-    
+
     val intNum: Int = 100000
     println("Integer number $intNum")
 
