@@ -6,8 +6,20 @@ class arrayIntro {
        fun main(args: Array<String>){
             //Arrays are used to store multiple values in a single variable, instead of creating separate variables for each value.
             //To create an array, use the arrayOf() function, and place the values in a comma-separated list inside it:
-            val favouriteFruits = arrayOf("Mango", "Banana", "Oranges", "Grapes")
-            print(favouriteFruits[0])
+
+            val favouriteFruits = arrayOf("Mango", "Banana", "Oranges", "Grapes") // initialization of array
+            print(favouriteFruits[0]) // this is how we can traverse an array
+
+            //how to show the elements then ? -> By simply using a loop which will traverse all the element
+
+            var x : String
+            for(x in favouriteFruits){
+                println(x)
+            }
+
+            //there are some functions which are very useful
+            favouriteFruits.reverse() // this will reverse the array by index
+            println("It will print the size of the array : ${favouriteFruits.size}")
 
 
        }
