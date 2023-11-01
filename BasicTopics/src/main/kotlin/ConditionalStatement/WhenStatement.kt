@@ -17,8 +17,6 @@ class whenStatement {
                 else -> "Invalid day."
             }
             println(result)
-
-
         }
     }
 }
