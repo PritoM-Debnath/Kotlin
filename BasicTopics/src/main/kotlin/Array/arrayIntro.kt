@@ -16,11 +16,18 @@ class arrayIntro {
             for(x in favouriteFruits){
                 println(x)
             }
+            //taking user input in array
+            print("Enter the elements")
+            var item = IntArray(3)
+            for (i in 0 until 3)
+                item[i]= readLine()!!.toInt()
+
+            for (i in 0 until 3)
+                println(item[i])
 
             //there are some functions which are very useful
             favouriteFruits.reverse() // this will reverse the array by index
             println("It will print the size of the array : ${favouriteFruits.size}")
-
 
        }
     }
